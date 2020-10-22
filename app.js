@@ -6,7 +6,7 @@ class App extends React.Component {
     render() {
         return(
             <Route path="/example" render={props => (
-                
+                <Home {...props}/>
             )}/>
         )
     }
