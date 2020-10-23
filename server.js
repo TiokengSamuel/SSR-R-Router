@@ -24,7 +24,7 @@ app.get('*', (req, res) => {
         <StaticRouter location= {req.url} context={context}>
             <App/>
         </StaticRouter>
-    )
+    ); 
 
     const html = `
         <html>
@@ -36,7 +36,7 @@ app.get('*', (req, res) => {
 
             </body>
         </html>
-    `
+    `;
 
     res.send('This is my working app')
 })
