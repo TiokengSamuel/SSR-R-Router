@@ -24,7 +24,7 @@ app.get('*', (req, res) => {
             <head></head>
             <body>
                 <div id = "root">
-                
+                    ${content}
                 </div>
 
             </body>
