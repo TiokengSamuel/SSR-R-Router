@@ -5,7 +5,7 @@ import ReactDOMServer from 'react-dom/server';
 import { StaticRouter } from 'react-router';
 import bodyParser from 'body-parser';
 
-import App from './src/';
+import App from './src/app';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
