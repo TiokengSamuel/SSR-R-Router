@@ -4,7 +4,7 @@
   "description": "Server side rendering from scratch",
   "main": "index.js",
   "scripts": {
-    "webpack:server": "webpack--config webpack.server.js --watch",
+    "webpack:server": "webpack --config webpack.server.js --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
     
   },
