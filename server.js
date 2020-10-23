@@ -12,8 +12,8 @@ import App from './src/app'
 app.get('*', (req, res) => {
 
     const content = ReactDOMServer.renderToString(
-        <StaticRouter>
-            
+        <StaticRouter location= {req.url}>
+            <App/>
         </StaticRouter>
     )
 
