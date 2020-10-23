@@ -4,7 +4,8 @@
   "description": "Server side rendering from scratch",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack:server":"webpack--config webpack.server.js --watch"
   },
   "repository": {
     "type": "git",
@@ -15,6 +16,7 @@
   "bugs": {
     "url": "https://github.com/TiokengSamuel/SSR-R-Router/issues"
   },
+
   "homepage": "https://github.com/TiokengSamuel/SSR-R-Router#readme",
   "dependencies": {
     "babel-cli": "^6.26.0",
