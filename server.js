@@ -36,8 +36,8 @@ app.get('*', (req, res) => {
         </html>
     `;
 
-    res.send('This is my working app')
-})
+    res.send(html)
+});
 
 app.listen(PORT, () => {
     console.log(`App running ${PORT}`);
