@@ -1,20 +1,18 @@
-import 'babel-polyfill'
-import express from 'express'
-import React from 'react'
-import ReactDOMServer from 'react-dom/server'
-import { StaticRouter } from 'react-router'
-import bodyParser from 'body-parser'
+import 'babel-polyfill';
+import express from 'express';
+import React from 'react';
+import ReactDOMServer from 'react-dom/server';
+import { StaticRouter } from 'react-router';
+import bodyParser from 'body-parser';
 
-import App from './app'
+import App from './src/';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
-app.use(express.static('build'))
+app.use(express.static('build'));
 
-
-import App from './src/app'
 
 app.get('*', (req, res) => {
 
