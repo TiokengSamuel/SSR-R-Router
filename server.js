@@ -5,11 +5,10 @@ import ReactDOMServer from 'react-dom/server'
 import { StaticRouter } from 'react-router'
 import bodyParser from 'body-parser'
 
-const app = express();
-const PORT = process.env.PORT || 3000;
-
 import App from './app'
 
+const app = express();
+const PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 app.use(express.static('build'))
