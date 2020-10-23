@@ -11,7 +11,11 @@ import App from './src/app'
 
 app.get('*', (req, res) => {
 
-    const content = ReactDOMServer.
+    const content = ReactDOMServer.renderToString(
+        <StaticRouter>
+            
+        </StaticRouter>
+    )
 
     res.send('This is my working app')
 })
