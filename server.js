@@ -19,6 +19,18 @@ app.get('*', (req, res) => {
         </StaticRouter>
     )
 
+    const html = `
+        <html>
+            <head></head>
+            <body>
+                <div id = "root">
+                
+                </div>
+
+            </body>
+        </html>
+    `
+
     res.send('This is my working app')
 })
 
