@@ -10,6 +10,10 @@ import App from './app'
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+app.use(bodyParser.json());
+app.use(express.static('build'))
+
+
 import App from './src/app'
 
 app.get('*', (req, res) => {
