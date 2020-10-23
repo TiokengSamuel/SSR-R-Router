@@ -36,7 +36,7 @@ app.get('*', (req, res) => {
         </html>
     `;
 
-    res.send(html)
+    res.send(html);
 });
 
 app.listen(PORT, () => {
