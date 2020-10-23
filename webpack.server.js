@@ -26,5 +26,6 @@ moduele.exports = {
                 }
             }
         ]
-    }
+    },
+    externals: [webpackNodeExternals()]
 }
